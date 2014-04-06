@@ -1,29 +1,62 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gaurav Butola</title>
+	<link rel="stylesheet" href="/butola/css/style.css" />
+	<link rel="stylesheet" type="text/css" media="only screen and (max-width: 480px), only screen and (max-device-width: 480px" href="/butola/css/mobile.css" />  
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
+    
+    <script src="/butola/js/jquery-1.10.2.min.js"></script>
+    <script src="/butola/js/script.js"></script>
+    <script src="/butola/js/jquery-ui.min.js"></script>
 
-<div class="blog-index">
-  {% assign index = true %}
-  {% for post in paginator.posts %}
-  {% assign content = post.content %}
-    <article>
-      {% include article.html %}
-    </article>
-  {% endfor %}
-  <div class="pagination">
-    {% if paginator.next_page %}
-      <a class="prev" href="{{paginator.next_page}}">&larr; Older</a>
-    {% endif %}
-    <a href="/blog/archives">Blog Archives</a>
-    {% if paginator.previous_page %}
-    <a class="next" href="{{paginator.previous_page}}">Newer &rarr;</a>
-    {% endif %}
-  </div>
-</div>
-<aside class="sidebar">
-  {% if site.blog_index_asides.size %}
-    {% include_array blog_index_asides %}
-  {% else %}
-    {% include_array default_asides %}
-  {% endif %}
-</aside>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1" />  
+</head>
+<body>
+	<header>
+		<div class="header-wrapper">
+			<div class="logo">
+				<b>Gaurav Butola</b>
+			</div>
+		
+			<div class="nav">
+				<div class="nav_menu">
+					<img src="/butola/img/menu_pressed.png" alt="menu pressed" />
+				</div>
+			
+				<ul>
+					<li><span class="linkButton"><a href="index.html">Home</a></span></li>
+					<li><span class="linkButton"><a href="about.html">About</a></span></li>
+					<li><span class="linkButton"><a href="blog">Blog</a></span></li>
+					<li><span class="linkButton" id="contact"><a href="#contact">Contact</a></span></li>	
+				</ul>
+				
+			</div>
+		</div>
+	</header>
+	<div class="site-wrapper">
+		<article class="content">
+			<div class="avatar">
+				<img src="/butola/img/avatar.jpg" alt="Gaurav Butola"/>
+			</div>
+
+			<div class="intro">
+			<h1>Hi there! I am Gaurav Butola.</h1>
+			<p>I'm computer science student from New Delhi, India.
+			This is my little home on the internet. Feel free to contact me on <span class="prettyLink" title="Gaurav Butola on G+"><a href="http://plus.google.com/+GauravButola">Google+</a></span> or send me an <span title="Use the contact form above">email</span> to say hi :)</p>
+			</div>
+		</article>
+				
+		<div class="social">
+			<ul>
+				<li><a href="http://twitter.com/GauravButola"><img src="/butola/img/somicro/Without Border/twitter.png" alt="twitter.com/GauravButola"/></a></li>
+				<li><a href="http://facebook.com/GauravButola"><img src="/butola/img/somicro/Without Border/facebook.png" alt="acebook.com/GauravButola"/></a></li>
+				<li><a href="http://github.com/GauravButola"><img src="/butola/img/somicro/Without Border/github.png" alt="github.com/GauravButola"/></a></li>
+				<li><a href="https://plus.google.com/106589611014770300953/posts"><img src="/butola/img/somicro/Without Border/gplus.png" alt="+GauravButola"/></a></li>
+			</ul>
+		</div>
+		
+	</div>
+</body>
+</html>
