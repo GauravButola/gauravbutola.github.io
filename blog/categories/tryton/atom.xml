@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Tryton | Gaurav Butola's Blog]]></title>
+  <link href="http://butola.com/blog/categories/tryton/atom.xml" rel="self"/>
+  <link href="http://butola.com/"/>
+  <updated>2015-01-23T23:57:04+05:30</updated>
+  <id>http://butola.com/</id>
+  <author>
+    <name><![CDATA[Gaurav Butola]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Angular and Tryton Based Web Application With Angular-tryton]]></title>
+    <link href="http://butola.com/blog/2015/01/19/angular-and-tryton-based-web-application-with-angular-tryton/"/>
+    <updated>2015-01-19T00:04:12+05:30</updated>
+    <id>http://butola.com/blog/2015/01/19/angular-and-tryton-based-web-application-with-angular-tryton</id>
+    <content type="html"><![CDATA[<p>If AngularJS is your choice of frontend development framework, and you are working
+with Tryton, then angular-tryton may just be what you need to create your next
+Tryton and AngularJS powered single page web application or mobile app.</p>
+
+<!-- more -->
+
+
+<h2>What&rsquo;s angular-tryton, anyway?</h2>
+
+<p>angular-tryton lets your angular app interact with Tryton the same way Tryton GTK
+client does; only now, you decide what data you want to get and how you want to present
+it in your app, hopefully you&rsquo;ll make something better than the GTK client ;)</p>
+
+<p>If you really want to dig into details about how angular-tryton works, it&rsquo;s
+probably a good idea to konw how the Tryton GTK client works, because that is
+exactly the same way angular-tryton interacts with the Tryton server AKA trytond.</p>
+
+<p>In fact angular-tryton enforces the exact permissions as the Tryton client does but
+with angular-tryton you can handle the responses, the way you want, keeping in
+mind the UI/UX of your app.</p>
+
+<h3>How Tryton works</h3>
+
+<p>Essentially, the Tryton client makes RPC calls to trytond and fetches the
+required data and/or makes changes to records.
+If you&rsquo;re curious about what RPC requests the Tryton client makes, you can run the
+Tryton GTK client in debug mode.</p>
+
+<p>Run the following command in your terminal if you have tryton already installed.</p>
+
+<p><code>bash
+tryton --log-level=debug
+</code></p>
+
+<p>Then log in, and you&rsquo;ll find, the terminal where you started Tryton in debug mode,
+get flooded with untelligble logs, but if you check out one of those logs starting with
+<code>INFO:</code> and you can make sense of what&rsquo;s happening.</p>
+
+<p>Tryton client  makes RPC calls to trytond and calls a method which may be
+any valid method documented in the Tryton API (create, write, search, read, etc).</p>
+
+<p>You can do exactly the same thing with the power of angular-tryton in you Angular
+app.</p>
+
+<h3>How angular-tryton works</h3>
+
+<p>Now you know how Tryton&rsquo;s GTK client works, time to understand how you can use angular-tryton
+to have the same superpowers that Tryton client has.</p>
+
+<p>angular-tryton, out of the box provides you 2 services <code>tryton</code> and <code>session</code>.
+So, the basic idea is <code>tryton</code> service is used for all the RPC calls which don&rsquo;t
+require a session i.e. if you don&rsquo;t have to be logged in to access a method
+for example:</p>
+
+<p>Getting trytond server version.
+<code>javascript
+tryton.getServerVersion()
+</code></p>
+
+<p>Getting a list of databases
+```javascript
+tryton.rpc(&lsquo;common.list&rsquo;, [null, null])
+.success(function(response){</p>
+
+<pre><code>$scope.databases = response;
+</code></pre>
+
+<p>});
+```</p>
+
+<p>And <code>session</code> service is for making RPC calls to the methods which require a
+tryton user to be logged in like: search, read, create write, etc.</p>
+
+<p>Log into tryton.
+```javascript
+session.doLogin($scope.user.database, $scope.user.username, $scope.user.password)
+.success(function(response){</p>
+
+<pre><code>// Yay! user logged in.
+</code></pre>
+
+<p>})
+.error(function(reason){</p>
+
+<pre><code>// Handle login failure.
+</code></pre>
+
+<p>});
+```</p>
+
+<p>After login, access Tryton&rsquo;s methods.
+```javascript
+// Create a pyson domain
+var domain = [</p>
+
+<pre><code>['id', '=', 42]
+</code></pre>
+
+<p>];
+// Call search_read method over RPC with the domain.
+session.rpc(&lsquo;model.party.party.search_read&rsquo;, [domain]);
+```</p>
+
+<p>In future post we&rsquo;ll discover how we can use this capability of angular-tryton
+to create something useful. How about a cordova based mobile application may be?</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,113 @@
+body {
+
+}
+
+.linkButton {
+	-moz-border-radius: 0px; 
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    border: 0px; 
+    padding: 0px;
+    background: #f5f5f5;
+}
+
+.linkButton a {
+	text-decoration: none;
+	color: #09f;
+}
+
+.linkButton a:hover {
+	color: #09f;
+}
+
+.site-wrapper  {
+	width: auto;
+}
+
+.logo {
+	float: none;
+	margin: auto;
+}
+
+.avatar {
+	float: none;
+	margin: auto;
+}
+
+header {
+	height: auto;
+}
+
+.header-wrapper {
+	width: auto;
+	height:auto;
+}
+
+.content {
+	margin: auto;
+	margin-top: 20px;
+}
+
+.intro {
+	float:none;
+	width: auto;
+	margin: auto;;
+}
+
+.nav_menu {
+	display: block;
+	cursor: pointer;
+	background: #e5e5e5
+	
+}
+
+.nav {
+	float: none;
+	margin: auto;
+	overflow: hidden;
+	background: white;
+}
+	
+.nav li {
+	margin: 1px;	
+	width: 135px;
+	border: 1px solid white;
+	background: #f5f5f5;
+}
+
+.nav ul {
+	display: none;
+}
+
+.social {
+	margin: auto;
+	width: 310px;	
+	padding-top: 50px;
+}
+	
+.social li {
+	width: 70px;
+	margin: 1px;	
+}
+
+.social ul {
+	margin: auto;
+	margin-left: 20px;
+}
+
+.contact-form {
+	font-size: 1em;
+	padding: 0px;
+	width: 300px;
+	left: 5px;
+	top: 100px;
+	margin: 0px;
+}
+
+input {
+	width: 250px;
+}
+
+textarea {
+	width: 260px;
+}
