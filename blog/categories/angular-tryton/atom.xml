@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Angular-tryton | Gaurav Butola's Blog]]></title>
-  <link href="http://GauravButola.github.io/blog/categories/angular-tryton/atom.xml" rel="self"/>
-  <link href="http://GauravButola.github.io/"/>
-  <updated>2015-01-24T00:09:19+05:30</updated>
-  <id>http://GauravButola.github.io/</id>
+  <link href="http://butola.com/blog/categories/angular-tryton/atom.xml" rel="self"/>
+  <link href="http://butola.com/"/>
+  <updated>2015-01-24T00:15:14+05:30</updated>
+  <id>http://butola.com/</id>
   <author>
     <name><![CDATA[Gaurav Butola]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Angular and Tryton Based Web Application With Angular-tryton]]></title>
-    <link href="http://GauravButola.github.io/blog/2015/01/19/angular-and-tryton-based-web-application-with-angular-tryton/"/>
+    <link href="http://butola.com/blog/2015/01/19/angular-and-tryton-based-web-application-with-angular-tryton/"/>
     <updated>2015-01-19T00:04:12+05:30</updated>
-    <id>http://GauravButola.github.io/blog/2015/01/19/angular-and-tryton-based-web-application-with-angular-tryton</id>
+    <id>http://butola.com/blog/2015/01/19/angular-and-tryton-based-web-application-with-angular-tryton</id>
     <content type="html"><![CDATA[<p>If AngularJS is your choice of frontend development framework, and you are working
 with Tryton, then angular-tryton may just be what you need to create your next
 Tryton and AngularJS powered single page web application or mobile app.</p>
