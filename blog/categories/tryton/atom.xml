@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tryton | Gaurav Butola's Blog]]></title>
   <link href="http://butola.com/blog/categories/tryton/atom.xml" rel="self"/>
   <link href="http://butola.com/"/>
-  <updated>2015-04-29T14:26:53+05:30</updated>
+  <updated>2015-04-29T14:29:14+05:30</updated>
   <id>http://butola.com/</id>
   <author>
     <name><![CDATA[Gaurav Butola]]></name>
@@ -53,8 +53,8 @@ tryton --log-level=debug
 </code></p>
 
 <p>Then log in, and you&rsquo;ll find, the terminal where you started Tryton in debug mode,
-get flooded with unintelligible logs, but if you check out one of those logs starting with
-<code>INFO:</code> and you can make sense of what&rsquo;s happening.</p>
+get flooded with unintelligible logs, but if you pay attention to one of those logs
+starting with <code>INFO:</code>, you can make sense of what&rsquo;s happening.</p>
 
 <p>Tryton client  makes RPC calls to trytond and calls a method which may be
 any valid method documented in the Tryton API (create, write, search, read, etc).</p>
