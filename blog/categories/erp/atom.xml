@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ERP | Gaurav Butola's Blog]]></title>
   <link href="http://butola.com/blog/categories/erp/atom.xml" rel="self"/>
   <link href="http://butola.com/"/>
-  <updated>2015-01-24T00:15:14+05:30</updated>
+  <updated>2015-04-29T14:25:07+05:30</updated>
   <id>http://butola.com/</id>
   <author>
     <name><![CDATA[Gaurav Butola]]></name>
@@ -53,7 +53,7 @@ tryton --log-level=debug
 </code></p>
 
 <p>Then log in, and you&rsquo;ll find, the terminal where you started Tryton in debug mode,
-get flooded with untelligble logs, but if you check out one of those logs starting with
+get flooded with unintelligible logs, but if you check out one of those logs starting with
 <code>INFO:</code> and you can make sense of what&rsquo;s happening.</p>
 
 <p>Tryton client  makes RPC calls to trytond and calls a method which may be
