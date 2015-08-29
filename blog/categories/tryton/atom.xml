@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Tryton | Gaurav Butola's Blog]]></title>
+  <title><![CDATA[Category: Tryton | Gaurav Butola]]></title>
   <link href="http://butola.com/blog/categories/tryton/atom.xml" rel="self"/>
   <link href="http://butola.com/"/>
-  <updated>2015-04-29T14:29:14+05:30</updated>
+  <updated>2015-08-29T21:41:19+05:30</updated>
   <id>http://butola.com/</id>
   <author>
     <name><![CDATA[Gaurav Butola]]></name>
-    
+    <email><![CDATA[gauravbutola@gmail.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
   
   <entry>
-    <title type="html"><![CDATA[Angular and Tryton Based Web Application With Angular-tryton]]></title>
+    <title type="html"><![CDATA[Angular and Tryton based web application with angular-tryton]]></title>
     <link href="http://butola.com/blog/2015/01/19/angular-and-tryton-based-web-application-with-angular-tryton/"/>
     <updated>2015-01-19T00:04:12+05:30</updated>
     <id>http://butola.com/blog/2015/01/19/angular-and-tryton-based-web-application-with-angular-tryton</id>
