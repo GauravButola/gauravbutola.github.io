@@ -10,3 +10,11 @@
 @import "custom/styles";
 
 @import "greyshade";
+
+/*
+ * Make the sidebar fully visible; not sure if this is the right place to override
+ * plugin's default but it only seems to work from here.
+ */
+.container .left-col {
+  opacity: 1
+}

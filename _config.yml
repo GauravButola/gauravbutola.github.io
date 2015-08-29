@@ -3,7 +3,7 @@
 # ----------------------- #
 
 url: http://butola.com
-title: Gaurav Butola's Blog
+title: Gaurav Butola
 subtitle: 
 author: Gaurav Butola
 simple_search: http://google.com/search
@@ -84,6 +84,9 @@ googleplus_hidden: false
 # Pinboard
 pinboard_user:
 pinboard_count: 3
+
+# LinkedIn
+linkedin_user: GauravButola
 
 # Delicious
 delicious_user:
